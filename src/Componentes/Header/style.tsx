@@ -9,6 +9,7 @@ export const PrincipalDivHeader = styled.div `
  flex-direction: row;
  justify-content: center;
  align-items: center;
- padding:30
+
+
 
 `

@@ -5,9 +5,9 @@ import logo_Header from "/src/assets/logoHeader.png";
 export default function Header(){
     return(
         <PrincipalDivHeader>
-            <div style={{width:'95%', display:'flex', alignItems:'center', flexDirection:'row', justifyContent:'space-between',height:120}}>
-                <div style={{ height:90,display:'flex',alignItems:'center',flexDirection:"row",width:'80%'}}>
-                    <img src={logo_Header} alt="Logo do Header" style={{width:150, marginLeft:50}} />
+            <div style={{width:'95%', display:'flex', alignItems:'center', flexDirection:'row', justifyContent:'space-between',height:120,paddingLeft:100, paddingRight:100  }}>
+                <div style={{ height:90,display:'flex',alignItems:'center',flexDirection:"row",width:'80%', }}>
+                    <img src={logo_Header} alt="Logo do Header" style={{width:150, }} />
 
                 </div>
                 <div style={{ display:'flex',alignItems:'center',flexDirection:"row",width:'50%',gap:32,justifyContent:'center'}}>
@@ -27,6 +27,7 @@ export default function Header(){
                     </div>
                 </div>
             </div>
+           
         </PrincipalDivHeader>
     )
 }

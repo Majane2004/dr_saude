@@ -1,32 +1,32 @@
-import { PrincipalDivHeader } from "./style"
+import { PrincipalDivHeader,ContainerDiv, ImgDiv,AcoesDiv,LinksAcoes } from "./style"
 import logo_Header from "/src/assets/logoHeader.png";
 
 
 export default function Header(){
     return(
         <PrincipalDivHeader>
-            <div style={{width:'95%', display:'flex', alignItems:'center', flexDirection:'row', justifyContent:'space-between',height:120,paddingLeft:100, paddingRight:100  }}>
-                <div style={{ height:90,display:'flex',alignItems:'center',flexDirection:"row",width:'80%', }}>
-                    <img src={logo_Header} alt="Logo do Header" style={{width:150, }} />
+            <ContainerDiv>
+                <ImgDiv>
+                    <img src={logo_Header} alt="Logo do Header" style={{width:150,}} />
 
-                </div>
-                <div style={{ display:'flex',alignItems:'center',flexDirection:"row",width:'50%',gap:32,justifyContent:'center'}}>
+                </ImgDiv>
+                <AcoesDiv>
                     <div style={{ display:'flex', }}>
-                        <a href="###" style={{color:'#000'}}>Home</a>
+                        <LinksAcoes href="###" >Home</LinksAcoes>
                        
                     </div>
-                    <div style={{ display:'flex', justifyContent:'space-between',}}>
-                        <a href="###" style={{color:'#000'}}>Nossa empresa</a>
+                    <div style={{ display:'flex'}}>
+                        <LinksAcoes href="###">Nossa empresa</LinksAcoes>
                     
                     </div>
-                    <div style={{ display:'flex', justifyContent:'space-between',}}>
-                        <a href="###" style={{color:'#000'}}>Nossos serviços</a>
+                    <div style={{ display:'flex'}}>
+                        <LinksAcoes href="###" >Nossos serviços</LinksAcoes>
                     </div>
-                    <div style={{ display:'flex', justifyContent:'space-between',}}>
-                        <a href="###" style={{color:'#000'}}>Contato</a>
+                    <div style={{ display:'flex'}}>
+                        <LinksAcoes href="###">Contato</LinksAcoes>
                     </div>
-                </div>
-            </div>
+                </AcoesDiv>
+            </ContainerDiv>
            
         </PrincipalDivHeader>
     )

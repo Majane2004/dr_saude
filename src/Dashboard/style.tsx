@@ -4,11 +4,6 @@ import breakPoints from "../breakPoints";
 
 
 
-
-
-
-
-
 export const PrincipalDiv = styled.div`
  display: flex;
  width: 100%;
@@ -117,9 +112,6 @@ export const TextoCaixaH2 = styled.h2`
 `
 
 
-
-
-
 export const ContainerEmpresa = styled.div`
   width: 100%;
   height:auto;
@@ -130,14 +122,14 @@ export const ContainerEmpresa = styled.div`
 
 
   @media ${breakPoints.lg}{
-    background:green;
+    align-items:center;
+    height:490px;
 
   }
 
-  @media screen and (max-width: 768px) {
-   
-    justify-content: start;
-    margin-top:25px;
+  @media ${breakPoints.md} {
+    height:auto;
+    
    
 }
 
@@ -160,7 +152,7 @@ export const Titulodiv = styled.div`
 }
  
 
- @media screen and (max-width:768px){
+ @media ${breakPoints.md}{
   justify-content:center;
   width: 100%;
   height: 4em;
@@ -179,8 +171,8 @@ font-size: 33px;
 
 }
 
-@media screen and (max-width:768px){
-    font-size: 25px;
+@media ${breakPoints.md}{
+    font-size: 29px;
     text-align:end;
 }
 
@@ -195,15 +187,15 @@ export const EmpresadivTextoimg = styled.div`
 
   
  @media ${breakPoints.lg}{
- 
   justify-content: start ;
-
-
 }
 
   @media ${breakPoints.md} {
     flex-direction: column;
-    height: 85%; /* Ajuste dinâmico da altura */
+    height: auto;
+    justify-content: center ;
+    align-items: center;
+
 
   }
 `;
@@ -226,10 +218,6 @@ export const Empresaimg = styled.img`
   width: 500px;
   height:200; 
 
-
-
-
- 
   @media screen and (max-width: 768px) {
     width: 90%; 
     height: auto; 
@@ -249,11 +237,11 @@ export const EmpresadivTextobtn = styled.div`
 
 }
 
-  @media screen and (max-width: 768px) {
-    width: 90%; /* Ajusta para 90% da largura da tela */
+  @media ${breakPoints.md} {
+    width: 90%;
     align-items: center;
-
-
+    margin-bottom:30px;
+    
   }
 `
 
@@ -263,7 +251,7 @@ export const BtnsaibaMaisdiv = styled.div`
 
 `
 
-export const EmpresaTextoH3 = styled.h3`
+export const EmpresaTextoH3 = styled.p`
 font-weight: 400;
  color:#000;
 text-align: left;
@@ -271,8 +259,7 @@ font-size:22px;
 
 
 @media ${breakPoints.lg}{
-  font-size:20px;
-
+  font-size:18px;
 
 
 }

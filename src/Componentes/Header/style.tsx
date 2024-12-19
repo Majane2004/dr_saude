@@ -34,6 +34,14 @@ export const ContainerDiv = styled.div`
  width:100%; 
 }
 
+@media ${breakPoints.sm}{
+ padding-left:0;
+ padding-right:0;
+ 
+
+ 
+}
+
 
  `
 export const ImgDiv = styled.div`
@@ -87,6 +95,15 @@ justify-content:end;
 
 }
 
+@media ${breakPoints.sm}{
+  width:100%;
+gap:20px;
+margin-bottom:0px;
+
+ 
+}
+
+
 `
 
 
@@ -98,7 +115,10 @@ export const LinksAcoes = styled.a`
    font-weight:400;
    font-size:14px;
 }
-
+@media ${breakPoints.sm}{
+  font-size:12px;
+ 
+}
 
 `
 

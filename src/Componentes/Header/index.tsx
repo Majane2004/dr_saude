@@ -1,4 +1,4 @@
-import { PrincipalDivHeader,ContainerDiv, ImgDiv,AcoesDiv,LinksAcoes } from "./style"
+import { PrincipalDivHeader,ContainerDiv, ImgDiv,AcoesDiv,LinksAcoes,LogoimgHeader } from "./style"
 import logo_Header from "/src/assets/logoHeader.png";
 
 
@@ -7,7 +7,7 @@ export default function Header(){
         <PrincipalDivHeader>
             <ContainerDiv>
                 <ImgDiv>
-                    <img src={logo_Header} alt="Logo do Header" style={{width:150,}} />
+                    <LogoimgHeader src={logo_Header} alt="Logo do Header"/>
 
                 </ImgDiv>
                 <AcoesDiv>

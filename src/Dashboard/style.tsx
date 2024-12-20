@@ -43,6 +43,12 @@ export const BannerDiv = styled.div`
   height: 390px;
 
 }
+
+@media ${breakPoints.sm}{
+  height: 340px;
+  width: 100%;
+
+}
 `
 
 export const BannerdivTexto = styled.div`
@@ -63,6 +69,16 @@ margin-left:100px;
 
 
 }
+
+
+@media ${breakPoints.sm}{
+ width: 70%;
+ margin-left:20px;
+
+
+}
+
+
 `
 export const Textoh1Banner = styled.h1`
  text-align: start; 
@@ -72,6 +88,12 @@ export const Textoh1Banner = styled.h1`
 
  @media ${breakPoints.md} {
  font-size: 50px;
+ font-weight: 600;
+ margin-top:95px;
+}
+
+@media ${breakPoints.sm} {
+ font-size: 35px;
  font-weight: 600;
  margin-top:95px;
 }
@@ -91,6 +113,11 @@ margin: auto;
  height:150px;
 
 }
+
+@media  ${breakPoints.sm} {
+ height:220px;
+
+}
 `
 export const TextoCaixaH2 = styled.h2`
  font-weight: 400;
@@ -107,6 +134,11 @@ export const TextoCaixaH2 = styled.h2`
 
  @media  ${breakPoints.md} {
     font-size: 14pt;
+     width:600px ;
+}
+
+@media  ${breakPoints.sm} {
+  font-size: 12pt;
      width:600px ;
 }
 `
@@ -147,10 +179,7 @@ export const Titulodiv = styled.div`
  height: 90px;
  display: flex;
  align-items:center
-
-
 }
- 
 
  @media ${breakPoints.md}{
   justify-content:center;
@@ -158,6 +187,13 @@ export const Titulodiv = styled.div`
   height: 4em;
   margin-bottom:20px;
  }
+
+ @media  ${breakPoints.sm} {
+  justify-content:center;
+  width: 100%;
+  height: 2em;
+  margin-bottom:20px;
+}
 
 `
 export const TituloH2 = styled.h2`
@@ -167,13 +203,16 @@ font-size: 33px;
 
 @media ${breakPoints.lg}{
   font-size: 29px;
-
-
 }
+
 
 @media ${breakPoints.md}{
     font-size: 29px;
     text-align:end;
+}
+
+@media ${breakPoints.sm}{
+  font-size: 22px;
 }
 
 `
@@ -208,8 +247,8 @@ export const Empresadivimg = styled.div`
 
 
 
-  @media screen and (max-width: 768px) {
-    height: auto; /* Ajuste para o tamanho do conteúdo */
+  @media ${breakPoints.md} {
+    height: auto;
     
   }
 `;
@@ -233,14 +272,17 @@ export const EmpresadivTextobtn = styled.div`
 
  @media ${breakPoints.lg}{
   height: auto;
-
-
 }
 
   @media ${breakPoints.md} {
     width: 90%;
     align-items: center;
     margin-bottom:30px;
+    
+  }
+
+  @media ${breakPoints.sm} {
+    width: 100vw;
     
   }
 `
@@ -263,9 +305,15 @@ font-size:22px;
 
 
 }
-@media screen and (max-width:768px){
+@media ${breakPoints.md}{
     font-size: 20px;
     text-align:center;
+
+}
+@media ${breakPoints.sm}{
+    font-size: 20px;
+    text-align:center;
+    margin:10px;
 
 }
 

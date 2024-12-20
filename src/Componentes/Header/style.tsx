@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import breakPoints from "../../breakPoints";
+import { Link } from "react-router-dom";
 
 
 
@@ -107,7 +108,7 @@ margin-bottom:0px;
 `
 
 
-export const LinksAcoes = styled.a`
+export const LinksAcoes = styled(Link)`
 
   color:#000;
   

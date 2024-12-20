@@ -1,7 +1,6 @@
 import { PrincipalDivHeader,ContainerDiv, ImgDiv,AcoesDiv,LinksAcoes,LogoimgHeader } from "./style"
 import logo_Header from "/src/assets/logoHeader.png";
 
-
 export default function Header(){
     return(
         <PrincipalDivHeader>
@@ -12,18 +11,18 @@ export default function Header(){
                 </ImgDiv>
                 <AcoesDiv>
                     <div style={{ display:'flex', }}>
-                        <LinksAcoes href="###" >Home</LinksAcoes>
+                        <LinksAcoes to={"/"} >Home</LinksAcoes>
                        
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes href="###">Nossa empresa</LinksAcoes>
+                        <LinksAcoes to={"empresa"}>Nossa empresa</LinksAcoes>
                     
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes href="###" >Nossos serviços</LinksAcoes>
+                        <LinksAcoes to={"###"}>Nossos serviços</LinksAcoes>
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes href="###">Contato</LinksAcoes>
+                        <LinksAcoes to={"###"}>Contato</LinksAcoes>
                     </div>
                 </AcoesDiv>
             </ContainerDiv>

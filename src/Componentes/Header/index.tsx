@@ -15,7 +15,7 @@ export default function Header(){
                        
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes to={"empresa"}>Nossa empresa</LinksAcoes>
+                        <LinksAcoes to={"/empresa"}>Nossa empresa</LinksAcoes>
                     
                     </div>
                     <div style={{ display:'flex'}}>

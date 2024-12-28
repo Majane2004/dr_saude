@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import banner from "/src/assets/banner01.png";
 import breakPoints from "../breakPoints";
-import img_missa from "/src/assets/empre-missao.png"
-import img_valores from "/src/assets/empre-valores.png"
-import img_visao from "/src/assets/empre-visao.png"
+
 
 
 
@@ -102,57 +100,16 @@ export const Textoh1Banner = styled.h1`
 }
 `
 
-export const CaixaTextoDiv = styled.div`
-width:100%;
-height:200px;
-background:#e3e8e8;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:0 0px; 
-margin: auto;  
 
-@media  ${breakPoints.md} {
- height:150px;
-
-}
-
-@media  ${breakPoints.sm} {
- height:220px;
-
-}
-`
-export const TextoCaixaH2 = styled.h2`
- font-weight: 400;
- font-style: italic;
- font-size: 18pt;
- color: #000;
- text-align:center;
- width:1300px ;
-
- @media  ${breakPoints.lg} {
-    font-size: 16pt;
-     width:900px ;
-}
-
- @media  ${breakPoints.md} {
-    font-size: 14pt;
-     width:600px ;
-}
-
-@media  ${breakPoints.sm} {
-  font-size: 12pt;
-     width:600px ;
-}
-`
 
 
 export const ContainerEmpresa = styled.div`
   width: 100%;
-  height:auto;
+  height:450px;
   display: flex;
   align-items:center;
   flex-direction:row;
+  padding-top:2em;
 
 
   @media ${breakPoints.lg}{
@@ -275,9 +232,6 @@ export const EmpresadivTexto = styled.div`
   padding-right:60px;
   flex-direction: column;
  
-
-
-
  @media ${breakPoints.lg}{
   height: auto;
 }
@@ -335,15 +289,30 @@ margin-left:1.5em;
 `
 
 
-
-
 export const CardContainer = styled.div`
 width:100%;
 display:flex;
 justify-content:center;
-height:'auto'; 
-margin-top:36px;
+height:500px; 
+padding-top:2em;
 
+@media ${breakPoints.lg}{
+  background:red;
+
+
+
+}
+@media ${breakPoints.md}{
+    font-size: 20px;
+    text-align:center;
+
+}
+@media ${breakPoints.sm}{
+    font-size: 20px;
+    text-align:center;
+    margin:10px;
+
+}
   
 `
 export const CardCaixa = styled.div`
@@ -354,53 +323,76 @@ text-align:center;
 justify-content:space-around;
 
 
-
-
-
 `
 export const ItemCard01 = styled.div`
-width:29%;
-
-
-
-height:350px;  
- 
-  
-display:flex;
-background-image: url(${img_visao});
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border-radius:20px;
+height:300px;  
 
 
 `
 export const ItemCard02 = styled.div`
-width:29%;
-
-
-height:350px; 
- 
-display:flex;
-background-image: url(${img_missa});
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-display:flex;
-border-radius:20px;
+height:300px;  
 
 
 `
 export const ItemCard03 = styled.div`
-width:28%;
+height:300px; 
 
-height:500px; 
+
+
+`
+
+export const Cardimg = styled.img`
+width:75%;
+`
+
+
+
+export const ContainerPrevenir =  styled.div`
 display:flex;
-background-image: url(${img_valores});
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-border-radius:20px;
+flex-direction:column;
+width:100%;
+justify-content:center;
+align-items:center;
+height:700px; 
+
+`
+
+export const CaixaDivPrevenir  =styled.div`
+width:100%;
+flex-direction:column;
+
+`
+export const TituloPrevenirH1 = styled.h1`
+color:#000;
+text-transform: uppercase;
+`
+
+export const CaixaPrevenirDiv = styled.div`
+width:90%;
+height:500px;
+display:flex;
+flex-direction:row;
+align-items:center;
+justify-content:center;
 
 
+`
+
+export const ItemimgDiv01 = styled.div`
+ height:500px;
+
+
+`
+
+export const ItemimgDiv02 = styled.div`
+ height:500px;
+ display:flex;
+ align-items:end;
+ justify-content:center;
+
+
+`
+
+export const Itensimg = styled.img`
+ width:49%;
 `

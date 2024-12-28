@@ -1,15 +1,20 @@
 import {
     PrincipalDiv, ContainerMain, BannerDiv, BannerdivTexto, Textoh1Banner,
-    CaixaTextoDiv, TextoCaixaH2, ContainerEmpresa, Titulodiv, TituloH2, EmpresadivTextoimg,
+   ContainerEmpresa, Titulodiv, TituloH2, EmpresadivTextoimg,
     Empresadivimg, EmpresadivTexto, EmpresaTextoH3, Empresaimg, BtnsaibaMaisdiv, EmpresaTextoP, CardContainer,
-    CardCaixa,ItemCard01,ItemCard02,ItemCard03
-} from "./style"
+    CardCaixa,ItemCard01,ItemCard02,ItemCard03,ContainerPrevenir,CaixaDivPrevenir,TituloPrevenirH1,CaixaPrevenirDiv,
+    ItemimgDiv01,ItemimgDiv02,Itensimg,Cardimg
+} from "./style";
+
 import Header from "../Componentes/Header"
 import enfermeiras from "/src/assets/duasMulheres.png"
 import arco from "/src/assets/img_arco.png"
 import avaliacao from "/src/assets/img_avaliacao.png"
 import balanca from "/src/assets/img_balanca.png"
 import filtro from "/src/assets/img_filtro.png"
+import img_missa from "/src/assets/empre-missao.png"
+import img_valores from "/src/assets/empre-valores.png"
+import img_visao from "/src/assets/empre-visao.png"
 
 
 
@@ -42,7 +47,7 @@ export default function Dashboard() {
                             </EmpresaTextoH3>
                             <BtnsaibaMaisdiv>
                                 <EmpresaTextoP>
-                                    Somos uma empresa especializada em serviçios de saúde ocupacional, prontos para cuidar da saúde e segurança dos seus
+                                    Somos uma empresa especializada em serviços de saúde ocupacional, prontos para cuidar da saúde e segurança dos seus
                                     colaboradores. Nossa equipe multidisciplinar oferece soluções personalizadas para atender às suas necessidades
                                     de forma eficiente e confiável.
                                 </EmpresaTextoP>
@@ -57,55 +62,45 @@ export default function Dashboard() {
 
                 <CardContainer>
                     <CardCaixa>
-                        <ItemCard01>
-                            
-
+                        <ItemCard01 >
+                            <Cardimg src={img_missa} alt="texto missao" />
                         </ItemCard01>
-
                         <ItemCard02>
-
+                            <Cardimg src={img_visao} alt="texto visao" />
                         </ItemCard02>
-
                         <ItemCard03>
-
+                            <Cardimg src={img_valores} alt="texto valores" />
                         </ItemCard03>
+                      
 
                     </CardCaixa>
                 </CardContainer>
 
 
-                <div style={{display:'flex',flexDirection:'column',background:'red', marginTop:90,width:"100%", justifyContent:'center',
-                     alignItems:'center',
-                }}>
-                    <div  style={{width:"100%",  flexDirection:'column',}}>
-                        <h1 style={{color:'#000'}}>
-                          PREVENIR É MELHOR QUE REMEDIAR
+                <ContainerPrevenir>
+                    <CaixaDivPrevenir>
+                        <TituloPrevenirH1 style={{}}>
+                         Prevenir é melhor que remediar 
+                        </TituloPrevenirH1>
+                    </CaixaDivPrevenir>
+                    <CaixaPrevenirDiv >
+                        <ItemimgDiv01 >
+                            <Itensimg src={arco} alt={"imagem de tiro ao alvo"} />
+                        </ItemimgDiv01>
 
-                        </h1>
-                    </div>
-                    <div  style={{width:"90%", height:500,display:'flex', flexDirection:'row',background:'green'
-                    }}>
-                        <div style={{ height:400, background:'blue', }}>
-                            <img src={arco} alt={"imagem de tiro ao alvo"} style={{width:"60%"}}/>
-                        </div>
+                        <ItemimgDiv02>
+                            <Itensimg src={balanca} alt={"imagem de uma balanca"} />
+                        </ItemimgDiv02>
 
-                        <div style={{ height:400, background:'pink',display:'flex',alignItems:'end',  justifyContent:'center', }}>
-                            <img src={balanca} alt={"imagem de uma balanca"} style={{width:"60%"}}/>
-                        </div>
+                        <ItemimgDiv01 >
+                            <Itensimg src={filtro} alt={"imagem de um filtro"} />
+                        </ItemimgDiv01>
 
-                        <div style={{ height:400, background:'blue'}}>
-                            <img src={filtro} alt={"imagem de um filtro"} style={{width:"60%"}}/>
-                        </div>
-
-                        <div style={{ height:400, background:'yellow',display:'flex',alignItems:'end',justifyContent:'center',}}>
-                            <img src={avaliacao} alt={"imagem avalaliações"} style={{width:"60%"}}/>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
+                        <ItemimgDiv02>
+                            <Itensimg src={avaliacao} alt={"imagem avalaliações"} />
+                        </ItemimgDiv02>
+                    </CaixaPrevenirDiv>
+                </ContainerPrevenir>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",

@@ -7,7 +7,7 @@ import {
 } from "./style";
 
 import Header from "../Componentes/Header"
-import enfermeiras from "/src/assets/duasMulheres.png"
+import enfermeirasEmpresa from "/src/assets/enfermeiras_empresa.png"
 import arco from "/src/assets/img_arco.png"
 import avaliacao from "/src/assets/img_avaliacao.png"
 import balanca from "/src/assets/img_balanca.png"
@@ -56,7 +56,7 @@ export default function Dashboard() {
 
                     </EmpresadivTextoimg>
                     <Empresadivimg>
-                        <Empresaimg src={enfermeiras} alt="duas enfermeiras no corredor" />
+                        <Empresaimg src={enfermeirasEmpresa} alt="duas enfermeiras no corredor" />
                     </ Empresadivimg >
                 </ContainerEmpresa>
 
@@ -79,7 +79,7 @@ export default function Dashboard() {
 
                 <ContainerPrevenir>
                     <CaixaDivPrevenir>
-                        <TituloPrevenirH1 style={{}}>
+                        <TituloPrevenirH1>
                          Prevenir é melhor que remediar 
                         </TituloPrevenirH1>
                     </CaixaDivPrevenir>

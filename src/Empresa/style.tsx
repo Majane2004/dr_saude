@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "/src/assets/banner01.png";
+import bannerEmpresa from "/src/assets/banner_empresa.png";
 import breakPoints from "../breakPoints";
 
 
@@ -28,7 +28,7 @@ align-items:center;
 export const BannerDiv = styled.div`
   height: 690px;
   width: 100%;
-  background-image: url(${banner});
+  background-image: url(${bannerEmpresa});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@ export const CardContainer = styled.div`
 width:100%;
 display:flex;
 justify-content:center;
-height:500px; 
+height:auto; 
 padding-top:2em;
 
 @media ${breakPoints.lg}{
@@ -319,47 +319,68 @@ export const CardCaixa = styled.div`
 width:90%;
 height:'auto'; 
 display:flex;
-text-align:center;
-justify-content:space-around;
+justify-content:space-between;
+flex-direction: row ;
 
 
 `
-export const ItemCard01 = styled.div`
-height:300px;  
+export const ItemCard01= styled.div`
+height:auto;  
+width:25%;
+align-items:start;
+display:flex;
 
 
 `
 export const ItemCard02 = styled.div`
-height:300px;  
+height:auto;  
+width:25%;
+display:flex;
+align-items:start;
+
+
+
 
 
 `
 export const ItemCard03 = styled.div`
-height:300px; 
+  height: auto;  
+  width:25%;
+  margin-right:35px;
+  display: flex;
+  justify-content: end; 
+  align-items: flex-start; /* Alinha os itens no final na vertical */
 
 
 
 `
 
 export const Cardimg = styled.img`
-width:75%;
+width:100%;
+
+
+
+
 `
 
-
+    
 
 export const ContainerPrevenir =  styled.div`
 display:flex;
 flex-direction:column;
 width:100%;
-justify-content:center;
+justify-content:space-between;
 align-items:center;
-height:700px; 
+margin-top:20px;
 
 `
 
 export const CaixaDivPrevenir  =styled.div`
 width:100%;
 flex-direction:column;
+
+
+
 
 `
 export const TituloPrevenirH1 = styled.h1`
@@ -369,23 +390,30 @@ text-transform: uppercase;
 
 export const CaixaPrevenirDiv = styled.div`
 width:90%;
-height:500px;
+height:560px;
 display:flex;
 flex-direction:row;
 align-items:center;
 justify-content:center;
+gap:93px;
+
 
 
 `
 
 export const ItemimgDiv01 = styled.div`
- height:500px;
+ width:229px;
+ height:420px;
 
 
 `
 
 export const ItemimgDiv02 = styled.div`
- height:500px;
+ height:420px;
+
+ width:229px;
+
+
  display:flex;
  align-items:end;
  justify-content:center;
@@ -394,5 +422,6 @@ export const ItemimgDiv02 = styled.div`
 `
 
 export const Itensimg = styled.img`
- width:49%;
+height:315px;
+width:229px;
 `

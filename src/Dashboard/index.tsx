@@ -1,11 +1,15 @@
 import {
     PrincipalDiv, ContainerMain, BannerDiv, BannerdivTexto, Textoh1Banner,
     CaixaTextoDiv, TextoCaixaH2, ContainerEmpresa, Titulodiv, TituloH2, EmpresadivTextoimg,
-    Empresadivimg, EmpresadivTextobtn, EmpresaTextoH3, Empresaimg, BtnsaibaMaisdiv
+    Empresadivimg, EmpresadivTextobtn, EmpresaTextoH3, Empresaimg, BtnsaibaMaisdiv, ContainerContato,
+    EmpresadivTextoimgContato, EmpresadivTextoContato, EmpresaTextoP,TituloContato
 } from "./style"
 import Header from "../Componentes/Header"
 import enfermeiras from "/src/assets/duasMulheres.png"
 import Button from "../Componentes/Button"
+import Contato from "/src/assets/Contato.png"
+import { Link } from "react-router-dom"
+
 
 
 export default function Dashboard() {
@@ -42,20 +46,53 @@ export default function Dashboard() {
                         </ Empresadivimg >
                         <EmpresadivTextobtn>
                             <EmpresaTextoH3>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+                                Somos especialistas em cuidar do bem mais precioso de sua empresa: as pessoas. Nossa missão é promover o bem-estar e a
+                                qualidade de vida no ambiente de trabalho, ajudando empresas do Polo Industrial de Manaus e de toda a região a alcançarem
+                                maior produtividade, engajamento e satisfação de suas equipes.
                             </EmpresaTextoH3>
 
                             <BtnsaibaMaisdiv>
-                                <Button>
-                                    Saiba mais
-                                </Button>
+                                <Link to={"/empresa"}>
+                                    <Button>
+                                        Saiba mais
+                                    </Button>
+                                </Link>
                             </BtnsaibaMaisdiv>
 
                         </EmpresadivTextobtn>
                     </EmpresadivTextoimg>
                 </ContainerEmpresa>
+
+                <ContainerContato >
+                    <EmpresadivTextoimgContato>
+
+                        <EmpresadivTextoContato>
+                            <TituloContato>
+                                Quer saber mais?
+                            </TituloContato>
+                            <BtnsaibaMaisdiv>
+                                <EmpresaTextoP>
+                                    Estamos prontos para transformar a saúde e segurança dos seus colaboradores!
+                                    Entre em contato conosco pelo link abaixo e vamos conversar!
+                                </EmpresaTextoP>
+                            </BtnsaibaMaisdiv>
+                            <BtnsaibaMaisdiv>
+                                <Button
+                                /* @ts-ignore */
+                                    width={200}
+                                >
+                                    Contato Dr Saúde
+                                </Button>
+
+                            </BtnsaibaMaisdiv>
+
+                        </EmpresadivTextoContato>
+
+                    </EmpresadivTextoimgContato>
+                    <Empresadivimg>
+                        <Empresaimg src={Contato} alt="uma mulher no telefone" />
+                    </ Empresadivimg >
+                </ContainerContato>
                 <div style={{
                     display: "flex",
                     justifyContent: "center",

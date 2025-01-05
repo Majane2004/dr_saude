@@ -7,7 +7,7 @@ interface ButtonProps {
 
 export default function Button (props:ButtonProps){
     return(
-        <ButtonPadrao style={{ width: 150, height: 40, fontSize: 18, fontWeight: "600" }}>
+        <ButtonPadrao{...props}>
             {props.children}
         </ButtonPadrao>
     )

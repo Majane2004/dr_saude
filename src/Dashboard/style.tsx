@@ -242,9 +242,10 @@ export const EmpresadivTextoimg = styled.div`
 export const Empresadivimg = styled.div`
   height: 365px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-
+  width:50%;
+  
 
 
   @media ${breakPoints.md} {
@@ -317,4 +318,89 @@ font-size:22px;
 
 }
 
+`
+export const ContainerContato = styled.div`
+  width: 80%;
+  height:420px;
+  display: flex;
+  align-items:center;
+  flex-direction:row;
+  padding-top:2em;
+  justify-content:space-around;
+
+  @media ${breakPoints.lg}{
+    align-items:center;
+    height:490px;
+
+  }
+
+  @media ${breakPoints.md} {
+    height:auto;
+    
+   
+}
+
+`
+
+export const EmpresadivTextoimgContato = styled.div`
+  width:50%;
+  height: 365px;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items:center;
+
+  
+ @media ${breakPoints.lg}{
+  justify-content: start ;
+}
+
+  @media ${breakPoints.md} {
+    flex-direction: column;
+    height: auto;
+    justify-content: center ;
+    align-items: center;
+
+
+  }
+`;
+
+
+export const EmpresadivTextoContato = styled.div`
+  height: 315px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+ 
+ @media ${breakPoints.lg}{
+}
+
+  @media ${breakPoints.md} {
+    width: 90%;
+    align-items: center;
+    margin-bottom:30px;
+    
+  }
+
+  @media ${breakPoints.sm} {
+    width: 100vw;
+    
+  }
+  `
+
+export const TituloContato = styled.h1`
+  font-weight: 600;
+ color:#000;
+text-align: left;
+font-size:32px;
+  
+  `
+
+
+
+export const EmpresaTextoP = styled.p`
+font-weight: 400;
+ color:#000;
+text-align: left;
+font-size:22px;
 `

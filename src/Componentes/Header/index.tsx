@@ -19,9 +19,6 @@ export default function Header(){
                     
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes to={"###"}>Nossos serviços</LinksAcoes>
-                    </div>
-                    <div style={{ display:'flex'}}>
                         <LinksAcoes to={"###"}>Contato</LinksAcoes>
                     </div>
                 </AcoesDiv>

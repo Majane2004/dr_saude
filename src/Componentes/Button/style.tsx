@@ -2,20 +2,25 @@ import styled from "styled-components";
 
 
 
-interface ButtonPropsStyle{
-    backgroundColor?: string
+interface ButtonPropsStyle {
+  backgroundColor?: string;
+  width?: number;
+  height?: number;
+  fontSize?: number;
+  fontWeight?: string;
+  color?:string;
 }
 
 
-export const ButtonPadrao = styled.button<ButtonPropsStyle>`
-  background-color: ${(props) => props.backgroundColor || '#009FC4'};
-  color: #fff;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  border: none;
-  cursor: pointer;
-
-
+export const ButtonPadrao = styled.button<ButtonPropsStyle>` 
+background-color: ${(props) => props.backgroundColor || '#009FC4'}; 
+color:${(props)=>props.color || '#fff'}; 
+font-size: ${(props) => (props.fontSize ? `${props.fontSize}px` : '1rem')};
+padding: 0.5rem 1rem;
+border-radius: 0.25rem;
+border: none; cursor: pointer;
+width: ${(props) => (props.width ? `${props.width}px` : '150px')};
+height: ${(props) => (props.height ? `${props.height}px` : 'auto')}; 
+font-weight: ${(props) => props.fontWeight || 'normal'};
 `
 

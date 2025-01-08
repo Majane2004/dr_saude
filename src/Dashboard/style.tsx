@@ -145,22 +145,31 @@ export const TextoCaixaH2 = styled.h2`
 
 
 export const ContainerEmpresa = styled.div`
-  width: 100%;
-  height:auto;
+  width: 90%;
+  height:500px;
   display: flex;
-  justify-content: space-around;
   align-items:center;
-  flex-direction:column;
-
+  flex-direction:row;
+  gap:70px;
 
   @media ${breakPoints.lg}{
     align-items:center;
     height:490px;
+    width: 100%;
+
 
   }
 
   @media ${breakPoints.md} {
-    height:auto;
+  height:auto;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+    
+  margin-top:2em;
+
+
     
    
 }
@@ -172,6 +181,7 @@ export const Titulodiv = styled.div`
  display: flex;
  align-items:center;
  margin-top:2em;
+
 
 
  @media ${breakPoints.lg}{
@@ -200,6 +210,8 @@ export const TituloH2 = styled.h2`
 font-weight: 600;
 color: #000;
 font-size: 33px;
+text-align:left;
+
 
 @media ${breakPoints.lg}{
   font-size: 29px;
@@ -213,16 +225,17 @@ font-size: 33px;
 
 @media ${breakPoints.sm}{
   font-size: 22px;
+  text-align:center;
+
 }
 
 `
 export const EmpresadivTextoimg = styled.div`
-  width: 80%; 
   height: 450px;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 35px;
+  flex-direction:column;
+
+
 
   
  @media ${breakPoints.lg}{
@@ -236,20 +249,34 @@ export const EmpresadivTextoimg = styled.div`
     align-items: center;
 
 
+
   }
 `;
 
 export const Empresadivimg = styled.div`
-  height: 365px;
+  height: 450px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width:50%;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction:column;
+  
   
 
 
   @media ${breakPoints.md} {
     height: auto;
+    width:100%;
+   align-items: center;
+
+
+    
+  }
+  @media ${breakPoints.sm} {
+    height: auto;
+
+   align-items: center;
+
+
     
   }
 `;
@@ -266,10 +293,12 @@ export const Empresaimg = styled.img`
 `;
 
 export const EmpresadivTextobtn = styled.div`
-  height: 315px;
+  width: 55%;
+  height: 450px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: column;
+  align-items:center;
 
  @media ${breakPoints.lg}{
   height: auto;
@@ -278,7 +307,8 @@ export const EmpresadivTextobtn = styled.div`
   @media ${breakPoints.md} {
     width: 90%;
     align-items: center;
-    margin-bottom:30px;
+  justify-content: center;
+
     
   }
 
@@ -290,7 +320,27 @@ export const EmpresadivTextobtn = styled.div`
 
 export const BtnsaibaMaisdiv = styled.div`
  display:flex;
+ flex-direction:column;
+ height: 350px;
+ align-items:start;
+ justify-content:center;
+ padding-bottom:20px;
 
+
+ @media ${breakPoints.md}{
+    justify-content:space-around; 
+    align-items:center;
+    height: 310px;
+   padding-bottom:0px;
+
+
+
+
+
+
+
+}
+ 
 
 `
 
@@ -309,10 +359,13 @@ font-size:22px;
 @media ${breakPoints.md}{
     font-size: 20px;
     text-align:center;
+    padding-left:0.5em;
+    padding-right:0.5em;
+
 
 }
 @media ${breakPoints.sm}{
-    font-size: 20px;
+    font-size: 16px;
     text-align:center;
     margin:10px;
 
@@ -320,22 +373,42 @@ font-size:22px;
 
 `
 export const ContainerContato = styled.div`
-  width: 80%;
-  height:420px;
+  width: 90%;
+  height:390px;
   display: flex;
-  align-items:center;
+  align-items:start;
   flex-direction:row;
-  padding-top:2em;
-  justify-content:space-around;
+  margin-top:3em;
+
 
   @media ${breakPoints.lg}{
     align-items:center;
     height:490px;
+    width: 100%;
+
 
   }
 
   @media ${breakPoints.md} {
     height:auto;
+   flex-direction:column-reverse;
+   margin-top:6em;
+   
+}
+
+@media ${breakPoints.sm} {
+    height:auto;
+   flex-direction:column-reverse;
+   padding-top:2em;
+   margin-top:0;
+
+   justify-content:center;
+
+
+
+  
+   
+    
     
    
 }
@@ -344,11 +417,12 @@ export const ContainerContato = styled.div`
 
 export const EmpresadivTextoimgContato = styled.div`
   width:50%;
-  height: 365px;
+  height: 350px;
   display: flex;
   justify-content: center;
   flex-direction:column;
   align-items:center;
+  padding-left:2px;
 
   
  @media ${breakPoints.lg}{
@@ -356,20 +430,52 @@ export const EmpresadivTextoimgContato = styled.div`
 }
 
   @media ${breakPoints.md} {
+     width:90%;
     flex-direction: column;
-    height: auto;
     justify-content: center ;
     align-items: center;
+    height: 320px;
+
+  }
+
+
+  @media ${breakPoints.sm} {
+     width:90%;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    height: 260px;
+
+
+
 
 
   }
 `;
 
+export const TituloDivContato = styled.div`
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+
+
+ 
+  @media ${breakPoints.md} {
+   width:100%;
+  align-items:'center';
+  height: 200px;
+  justify-content:center;
+  
+
+  }
+ 
+ `
 
 export const EmpresadivTextoContato = styled.div`
+  width:100%;
   height: 315px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
  
  @media ${breakPoints.lg}{
@@ -379,28 +485,104 @@ export const EmpresadivTextoContato = styled.div`
     width: 90%;
     align-items: center;
     margin-bottom:30px;
+   justify-content: space-around;
+
+
+
+    
     
   }
 
   @media ${breakPoints.sm} {
-    width: 100vw;
+    width: 80vw;
+   height: 300px;
+   justify-content:flex-start;
+
+
+
+
     
   }
   `
 
 export const TituloContato = styled.h1`
   font-weight: 600;
- color:#000;
-text-align: left;
-font-size:32px;
-  
+  color:#000;
+  text-align: left;
+  font-size:32px;
+  width:100%;
+
+@media ${breakPoints.md} {
+  text-align: center;
+
+    
+  }
+  @media ${breakPoints.sm} {
+  text-align: center;
+  font-size:22px;
+
+
+    
+  }
   `
 
+export const ContatoImg = styled.div`
+  height: 365px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  width:50%;
+
+  @media ${breakPoints.lg} {
+
+  }
+
+  @media ${breakPoints.md} {
+    justify-content: center;
+    height: 'auto';
+    width:100%;
+  }
+
+  @media ${breakPoints.sm} {
+    justify-content: center;
+    height: 230px;
+    width:100%;
+  align-items: center;
+}
+
+`
+
+export const BtnContatoDiv = styled.div`
+ display:flex;
+ flex-direction:column;
+ height: 350px;
+ align-items:start;
+ justify-content:center;
+ padding-bottom:20px;
 
 
-export const EmpresaTextoP = styled.p`
-font-weight: 400;
- color:#000;
-text-align: left;
-font-size:22px;
+ @media ${breakPoints.md} {
+    height: 20px;
+   padding-bottom:0px;
+
+
+    ;
+
+
+  }
+
+  @media ${breakPoints.sm} {
+    height: 20px;
+    padding-bottom:0px;
+   justify-content:flex-end;
+   margin-top:2em;
+
+
+ 
+
+    ;
+
+
+  }
+
 `

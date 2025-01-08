@@ -120,6 +120,8 @@ export const ContainerEmpresa = styled.div`
 
   @media ${breakPoints.md} {
     height:auto;
+  flex-direction:column;
+
     
    
 }
@@ -144,14 +146,21 @@ export const Titulodiv = styled.div`
 
  @media ${breakPoints.md}{
   justify-content:center;
-  width: 100%;
   height: 4em;
   margin-bottom:20px;
+ margin-left:0;
+
+ }
+
+ @media ${breakPoints.mdd}{
+  width: 80vw;
+
+
  }
 
  @media  ${breakPoints.sm} {
   justify-content:center;
-  width: 100%;
+  width: 80vw;
   height: 2em;
   margin-bottom:20px;
 }
@@ -161,6 +170,7 @@ export const TituloH2 = styled.h2`
 font-weight: 800;
 color: #000;
 font-size: 42px;
+text-transform: uppercase;
 
 @media ${breakPoints.lg}{
   font-size: 29px;
@@ -168,12 +178,12 @@ font-size: 42px;
 
 
 @media ${breakPoints.md}{
-    font-size: 29px;
+    font-size: 35px;
     text-align:end;
 }
 
 @media ${breakPoints.sm}{
-  font-size: 22px;
+  font-size: 28px;
 }
 
 `
@@ -197,6 +207,11 @@ export const EmpresadivTextoimg = styled.div`
 
 
   }
+  @media ${breakPoints.sm} {
+
+
+
+  }
 `;
 
 export const Empresadivimg = styled.div`
@@ -210,16 +225,29 @@ export const Empresadivimg = styled.div`
     height: auto;
     
   }
+  @media ${breakPoints.sm} {
+    width: 80%;
+
+    
+  }
 `;
 
 export const Empresaimg = styled.img`
   width: 500px;
-  height:200; 
 
 
-  @media screen and (max-width: 768px) {
-    width: 90%; 
-    height: auto; 
+  @media ${breakPoints.md} {
+    width: 100%; 
+  
+
+
+  }
+  @media ${breakPoints.sm} {
+    height: 300px;
+    width: 100%; 
+
+    ;
+
 
   }
 `;
@@ -244,13 +272,22 @@ export const EmpresadivTexto = styled.div`
   }
 
   @media ${breakPoints.sm} {
-    width: 100vw;
+    margin-bottom:0px;
+
     
   }
 `
 
 export const BtnsaibaMaisdiv = styled.div`
  display:flex;
+
+
+ @media ${breakPoints.md}{
+  width: 80vw;
+
+
+
+}
 
 `
 
@@ -260,6 +297,8 @@ color:#000;
 text-align: left;
 font-size:22px;
 margin-left:1.5em;
+text-transform: uppercase;
+
 
 @media ${breakPoints.lg}{
   font-size:18px;
@@ -269,12 +308,14 @@ margin-left:1.5em;
 @media ${breakPoints.md}{
     font-size: 20px;
     text-align:center;
+    margin-left:0;
+
+
 
 }
 @media ${breakPoints.sm}{
-    font-size: 20px;
+    font-size: 16px;
     text-align:center;
-    margin:10px;
 
 }
 
@@ -286,6 +327,22 @@ font-weight: 400;
 text-align: left;
 font-size:22px;
 margin-left:1.5em;
+
+@media ${breakPoints.md}{
+  margin-left:0;
+text-align: center;
+
+
+}
+
+@media ${breakPoints.sm}{
+  margin-left:0;
+text-align: center;
+font-size:18px;
+
+
+
+}
 `
 
 
@@ -297,7 +354,10 @@ height:auto;
 padding-top:2em;
 
 @media ${breakPoints.lg}{
-  background:red;
+ align-items:center;
+
+ 
+
 
 
 
@@ -323,12 +383,36 @@ justify-content:space-between;
 flex-direction: row ;
 
 
+@media ${breakPoints.lg}{
+padding-left:1em;
+
+}
+@media ${breakPoints.sm}{
+  flex-direction: column ;
+  align-items:center;
+  gap: 30px;
+
+
+}
+
+
 `
 export const ItemCard01= styled.div`
 height:auto;  
 width:25%;
 align-items:start;
 display:flex;
+
+@media ${breakPoints.lg}{
+  width:30%;
+
+
+}
+@media ${breakPoints.sm}{
+  width:90%;
+
+
+}
 
 
 `
@@ -337,6 +421,17 @@ height:auto;
 width:25%;
 display:flex;
 align-items:start;
+
+@media ${breakPoints.lg}{
+  width:30%;
+
+
+}
+@media ${breakPoints.sm}{
+  width:90%;
+
+
+}
 
 
 
@@ -352,13 +447,36 @@ export const ItemCard03 = styled.div`
   align-items: flex-start; /* Alinha os itens no final na vertical */
 
 
+  @media ${breakPoints.lg}{
+  width:28%;
+
+
+}
+@media ${breakPoints.sm}{
+  width:90%;
+ margin-left:1em;
+  align-items: center; /* Alinha os itens no final na vertical */
+  justify-content: center; 
+
+
+
+
+}
+
 
 `
 
 export const Cardimg = styled.img`
 width:100%;
 
+@media ${breakPoints.sm}{
+  height:auto;
+   
 
+
+
+
+}
 
 
 `
@@ -373,6 +491,12 @@ justify-content:space-between;
 align-items:center;
 margin-top:20px;
 
+
+@media ${breakPoints.lg}{
+
+
+  }
+
 `
 
 export const CaixaDivPrevenir  =styled.div`
@@ -386,6 +510,15 @@ flex-direction:column;
 export const TituloPrevenirH1 = styled.h1`
 color:#000;
 text-transform: uppercase;
+
+@media ${breakPoints.md}{
+    font-size: 35px;
+
+}
+@media ${breakPoints.sm}{
+    font-size: 28px;
+
+}
 `
 
 export const CaixaPrevenirDiv = styled.div`
@@ -397,6 +530,33 @@ align-items:center;
 justify-content:center;
 gap:93px;
 
+@media ${breakPoints.lg}{
+gap:35px;
+
+
+    
+
+}
+
+@media ${breakPoints.md}{
+width:90%;
+height:460px;
+
+}
+
+@media ${breakPoints.mdd}{
+width:90%;
+height:340px;
+
+}
+
+
+@media ${breakPoints.sm}{
+  flex-direction:column;
+  height:auto;
+
+}
+
 
 
 `
@@ -405,23 +565,82 @@ export const ItemimgDiv01 = styled.div`
  width:229px;
  height:420px;
 
+ 
+  @media ${breakPoints.mdd}{
+  width:90px;
+  height:300px;
+
+
+  
+
+} 
+
+@media ${breakPoints.sm}{
+  width:229px;
+  height:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+
+  }
+
+
+
 
 `
 
 export const ItemimgDiv02 = styled.div`
  height:420px;
-
  width:229px;
-
-
  display:flex;
  align-items:end;
  justify-content:center;
 
+ @media ${breakPoints.sm}{
+  height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
 
+  @media ${breakPoints.mdd}{
+  width:90px;
+  height:300px;
+
+  }
 `
 
 export const Itensimg = styled.img`
 height:315px;
 width:229px;
+
+@media ${breakPoints.lg}{
+
+  height:295px;
+  width:209px;
+    
+
+}
+
+@media ${breakPoints.md}{
+
+height:255px;
+width:180px;
+}
+
+@media ${breakPoints.mdd}{
+  width:100px;
+  height:190px;
+
+}
+
+@media ${breakPoints.sm}{
+  height:255px;
+width:180px;
+
+
+}
+
+
 `

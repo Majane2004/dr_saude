@@ -38,13 +38,15 @@ export default function Dashboard() {
                     <EmpresadivTextoimg >
                         <Titulodiv >
                             <TituloH2>
-                                SOBRE A EMPRESA
+                                Sobre a empresa
                             </TituloH2>
                         </Titulodiv>
                         <EmpresadivTexto>
+
                             <EmpresaTextoH3>
-                                CUIDANDO DA SAÚDE DOS SEUS COLABORADORES
+                                Cuidando da saúde dos seus colaboradores
                             </EmpresaTextoH3>
+
                             <BtnsaibaMaisdiv>
                                 <EmpresaTextoP>
                                     Somos uma empresa especializada em serviços de saúde ocupacional, prontos para cuidar da saúde e segurança dos seus
@@ -52,6 +54,7 @@ export default function Dashboard() {
                                     de forma eficiente e confiável.
                                 </EmpresaTextoP>
                             </BtnsaibaMaisdiv>
+                            
                         </EmpresadivTexto>
 
                     </EmpresadivTextoimg>

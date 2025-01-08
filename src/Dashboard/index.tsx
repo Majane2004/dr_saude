@@ -1,6 +1,6 @@
 import {
     PrincipalDiv, ContainerMain, BannerDiv, BannerdivTexto, Textoh1Banner,
-    CaixaTextoDiv, TextoCaixaH2, ContainerEmpresa, Titulodiv, TituloH2, EmpresadivTextoimg,
+    CaixaTextoDiv, TextoCaixaH2, ContainerEmpresa, TituloH2, EmpresadivTextoimg,
     Empresadivimg, EmpresadivTextobtn, EmpresaTextoH3, Empresaimg, BtnsaibaMaisdiv, ContainerContato,
     EmpresadivTextoimgContato, EmpresadivTextoContato, TituloContato, ContatoImg, TituloDivContato,
     BtnContatoDiv
@@ -74,6 +74,7 @@ export default function Dashboard() {
                         <EmpresadivTextoimgContato>
 
                             <EmpresadivTextoContato>
+
                                 <TituloDivContato>
                                     <TituloContato>
                                         Quer saber mais?
@@ -82,7 +83,10 @@ export default function Dashboard() {
                                         Estamos prontos para transformar a saúde e segurança dos seus colaboradores!
                                         Entre em contato conosco pelo link abaixo e vamos conversar!
                                     </EmpresaTextoH3>
+
                                 </TituloDivContato>
+
+
                                 <BtnContatoDiv>
                                     <Button
                                         /* @ts-ignore */
@@ -96,9 +100,12 @@ export default function Dashboard() {
                             </EmpresadivTextoContato>
 
                         </EmpresadivTextoimgContato>
+
                         <ContatoImg>
                             <Empresaimg src={Contato} alt="uma mulher no telefone" />
                         </ ContatoImg >
+
+
                     </ContainerContato>
                 </div>
 

@@ -90,9 +90,17 @@ justify-content:end;
 @media ${breakPoints.md} {
     width:100%;
     height:100px;
-    gap:50px;
+    gap:90px;
     margin-bottom:10px;
     justify-content:center;
+
+}
+
+
+@media ${breakPoints.mdd} {
+   
+    gap:50px;
+  
 
 }
 
@@ -114,7 +122,7 @@ export const LinksAcoes = styled(Link)`
   
   @media ${breakPoints.md} {
    font-weight:400;
-   font-size:14px;
+   font-size:18px;
 }
 @media ${breakPoints.sm}{
   font-size:12px;

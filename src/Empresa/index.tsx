@@ -15,6 +15,7 @@ import filtro from "/src/assets/img_filtro.png"
 import img_missa from "/src/assets/empre-missao.png"
 import img_valores from "/src/assets/empre-valores.png"
 import img_visao from "/src/assets/empre-visao.png"
+import Footer from "../Componentes/Footer";
 
 
 
@@ -104,17 +105,7 @@ export default function Dashboard() {
                         </ItemimgDiv02>
                     </CaixaPrevenirDiv>
                 </ContainerPrevenir>
-                <div style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    background: "#009FC4",
-                    width: "100%",
-                    height: 90,
-                }}>
-
-                </div> 
-            
+                <Footer/>
             </ContainerMain>
         </PrincipalDiv>
     )

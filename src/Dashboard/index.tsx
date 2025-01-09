@@ -11,6 +11,7 @@ import enfermeiras from "/src/assets/duasMulheres.png"
 import Button from "../Componentes/Button"
 import Contato from "/src/assets/Contato.png"
 import { Link } from "react-router-dom"
+import Footer from "../Componentes/Footer"
 
 
 
@@ -109,20 +110,8 @@ export default function Dashboard() {
                     </ContainerContato>
                 </div>
 
-
-
-
-
-                <div style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    background: "#009FC4",
-                    width: "100%",
-                    height: 90,
-                }}>
-
-                </div>
+              <Footer/>
+              
             </ContainerMain>
         </PrincipalDiv>
     )

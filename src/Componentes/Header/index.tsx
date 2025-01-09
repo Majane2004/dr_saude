@@ -19,7 +19,8 @@ export default function Header(){
                     
                     </div>
                     <div style={{ display:'flex'}}>
-                        <LinksAcoes to={"###"}>Contato</LinksAcoes>
+                        <LinksAcoes to={"https://docs.google.com/forms/d/e/1FAIpQLSftLSR_cFd0WmE5wSqleNgV34eRpi3IaDiZtpuOBJk8BrjzRw/viewform?embedded=true"}
+                        >Contato</LinksAcoes>
                     </div>
                 </AcoesDiv>
             </ContainerDiv>

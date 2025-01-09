@@ -9,44 +9,32 @@ justify-content:center;
 align-items:center;
 background: #009FC4;
 width:100%;
-height: 110px;
+height: auto;
 
-@media ${breakPoints.mdd}{
-    width:100%;
-    height: 90px;
- 
-}
 
-@media ${breakPoints.sm}{
-    width:100%;
-    height: 60px;
- 
-}
 
 `
 export const DesenvolvidoImg = styled.img `
-width:20%;
-height: 90px;
+width:22%;
+height: auto;
+
+
 
 @media ${breakPoints.md}{
     width:30%;
-    height: 80px;
  
 }
 @media ${breakPoints.mdd}{
     width:55%;
-    height: 65px;
  
 }
 
 @media ${breakPoints.sm}{
     width:30%;
-    height: 50px;
  
 }
 @media ${breakPoints.pp}{
     width:45%;
-    height: 55px;
  
 }
 

@@ -34,8 +34,8 @@ height: 90px;
  
 }
 @media ${breakPoints.mdd}{
-    width:40%;
-    height: 80px;
+    width:55%;
+    height: 65px;
  
 }
 

@@ -1,4 +1,5 @@
 const size = {
+    pp:"430px",
     sm: "460px",
     mdd: "820px",
     md: "996px",
@@ -6,6 +7,7 @@ const size = {
   };
   
   const breakPoints = {
+    pp: `(max-width: ${size.pp})`,
     sm: `(max-width: ${size.sm})`,
     mdd: `(max-width: ${size.mdd})`,
     md: `(max-width: ${size.md})`,

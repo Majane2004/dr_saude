@@ -1,10 +1,13 @@
-import { FooterDiv } from "./style"
+import { FooterDiv, DesenvolvidoImg } from "./style"
+import desenvolvido from  "/src/assets/Desenvolvido.png";
 
 export default function Footer() {
 
 
     return (
-       <FooterDiv/>
+       <FooterDiv>
+            <DesenvolvidoImg src={desenvolvido} alt="Desenvolvido por MJ produção edição consultoria"/>
+       </FooterDiv>
 
     )
 

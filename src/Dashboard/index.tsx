@@ -89,12 +89,14 @@ export default function Dashboard() {
 
 
                                 <BtnContatoDiv>
+                                <Link to={"https://docs.google.com/forms/d/e/1FAIpQLSftLSR_cFd0WmE5wSqleNgV34eRpi3IaDiZtpuOBJk8BrjzRw/viewform?embedded=true"}>
                                     <Button
                                         /* @ts-ignore */
                                         width={200}
                                     >
                                         Contato Dr Saúde
                                     </Button>
+                                </Link>
 
                                 </BtnContatoDiv>
 
